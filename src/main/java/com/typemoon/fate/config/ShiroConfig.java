@@ -34,7 +34,7 @@ public class ShiroConfig {
         //设置shiro的拦截规则
         Map<String, String> filterMap = new HashMap<>();
         filterMap.put("/", "anon");
-        filterMap.put("/login1.html", "anon");
+        filterMap.put("/login.html", "anon");
         filterMap.put("/regist.html", "anon");
         filterMap.put("/mio/login", "anon");
         filterMap.put("/**", "authc");

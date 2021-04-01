@@ -13,4 +13,6 @@ import com.baomidou.mybatisplus.extension.service.IService;
  */
 public interface IMioService extends IService<Mio> {
 
+    public void checkLogin(String user, String password) throws Exception;
+
 }
