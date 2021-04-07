@@ -32,15 +32,27 @@ public class MioController {
             mioService.checkLogin(user, password);
             System.out.println("---------------登录成功---------------");
             System.out.println(user+"-----------------"+password);
-            return "succse";
+            return "index";
         } catch (Exception e) {
             System.out.println(user+"-----------------"+password);
             System.out.println("---------------失败------------------");
             return "errrrrrrrrrrrrrrrr";
         }
+    }
 
 
-
+    @RequestMapping("index")
+    public String index(String user, String password) throws Exception {
+        try {
+            mioService.checkLogin(user, password);
+            System.out.println("---------------登录成功---------------");
+            System.out.println(user+"-----------------"+password);
+            return "index.html";
+        } catch (Exception e) {
+            System.out.println(user+"-----------------"+password);
+            System.out.println("---------------失败------------------");
+            return "errrrrrrrrrrrrrrrr";
+        }
     }
 }
 

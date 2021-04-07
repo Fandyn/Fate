@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns:th="http://www.thymeleaf.org"
+      xmlns:shiro="http://www.pollix.at/thymeleaf/shiro">
 <head>
     <meta charset="UTF-8">
     <title>login</title>
@@ -7,10 +8,41 @@
 <body>
     index
     <br>
-    <form action="/mio/login" >
-        <input type="text" name="user">
-        <input type="text" name="password">
-        <input type="submit" value="登录">
-    </form>
+    <shiro:guest>
+        欢迎游客访问，<a href="login.html"> 登录</a>
+    </shiro:guest>
+    <shiro:user>
+        【用户】[ <shiro:principal/>]  欢迎
+        <br>
+        当前用户为[
+        <shiro:hasRole name="admin">管理员</shiro:hasRole>
+        <shiro:hasRole name="cmanager">仓管</shiro:hasRole>
+        <shiro:hasRole name="xmanager">销售</shiro:hasRole>
+        <shiro:hasRole name="kmanager">客服</shiro:hasRole>
+        <shiro:hasRole name="zmanager">行政</shiro:hasRole>]
+    </shiro:user>
+    <br>
+        cg
+        <ul>
+            <shiro:hasPermission name="sys:c:save"><li><a href="#">r</a></li></shiro:hasPermission>
+            <shiro:hasPermission name="sys:c:delete"><li><a href="#">c</a></li></shiro:hasPermission>
+            <shiro:hasPermission name="sys:c:update"><li><a href="#">x</a></li></shiro:hasPermission>
+            <shiro:hasPermission name="sys:c:find"><li><a href="#">cx</a></li></shiro:hasPermission>
+        </ul>
+    dd
+    <ul>
+        <shiro:hasPermission name="sys:x:save"><li><a href="#">r</a></li></shiro:hasPermission>
+        <shiro:hasPermission name="sys:x:delete"><li><a href="#">c</a></li></shiro:hasPermission>
+        <shiro:hasPermission name="sys:x:update"><li><a href="#">x</a></li></shiro:hasPermission>
+        <shiro:hasPermission name="sys:x:find"><li><a href="#">cx</a></li></shiro:hasPermission>
+    </ul>
+    kh
+    <ul>
+        <shiro:hasPermission name="sys:k:save"><li><a href="#">r</a></li></shiro:hasPermission>
+        <shiro:hasPermission name="sys:k:delete"><li><a href="#">c</a></li></shiro:hasPermission>
+        <shiro:hasPermission name="sys:k:update"><li><a href="#">x</a></li></shiro:hasPermission>
+        <shiro:hasPermission name="sys:k:find"><li><a href="#">cx</a></li></shiro:hasPermission>
+    </ul>
+
 </body>
 </html>

@@ -7,7 +7,15 @@
 <body>
     login
     <br>
-    <form action="/mio/login" >
+    <form action="/mio/login" method="post">
+        <input type="text" name="user">
+        <input type="text" name="password">
+        <input type="submit" value="登录">
+    </form>
+    <br>
+    权限控制
+    <br>
+    <form action="/login"  method="post">
         <input type="text" name="user">
         <input type="text" name="password">
         <input type="submit" value="登录">
