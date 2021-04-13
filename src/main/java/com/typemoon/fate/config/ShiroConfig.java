@@ -33,6 +33,26 @@ public class ShiroConfig {
 //        IniRealm iniRealm = new IniRealm("classpath:shiro.ini");
 //        return iniRealm;
 //    }
+    //寻不得一种方法可以解释所有事物
+
+    /**
+     *命运究竟是什么呢？
+     * 是按照既定的道路一昧的活着，还是生来就具有的一种使命
+     * 所谓屈服于命运，是指厌倦了什么呢？争斗？傲慢？还是说害怕着什么呢？失去？死亡？
+     * 毛虫破茧涅槃，是对命运的屈从还是反抗呢？
+     * 庶民的只需屈服强者即可，这就是他们的命运，是他们的使命，是他们唯一的价值
+     *权贵如此说道
+     * 不，我们要反抗，我们需要英雄
+     * 英雄的使命便是革命，这是英雄的命运
+     * 命运难道不是一种被他人强加的期望吗
+     * 无论这期望是当救世的英雄，还是做卑微的奴隶
+     * 命运，枷锁尔！
+     * 有人甘之如饴，有人视若砒霜
+     * 有人怒斥命运的不公
+     * 命运却笑出了声
+     * 不甘，傲慢，嫉妒，贪婪，诸般大罪缠绕其身，吞噬其心，最终化为
+     *
+     */
 
     @Bean
 //    public DefaultWebSecurityManager getDefaultWebSecurityManager(IniRealm iniRealm) {
