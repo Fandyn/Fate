@@ -2,7 +2,6 @@ package com.typemoon.fate.config;
 
 import at.pollux.thymeleaf.shiro.dialect.ShiroDialect;
 import org.apache.shiro.realm.jdbc.JdbcRealm;
-import org.apache.shiro.realm.text.IniRealm;
 import org.apache.shiro.spring.web.ShiroFilterFactoryBean;
 import org.apache.shiro.web.mgt.DefaultWebSecurityManager;
 import org.springframework.context.annotation.Bean;
@@ -40,7 +39,7 @@ public class ShiroConfig {
      * 是按照既定的道路一昧的活着，还是生来就具有的一种使命
      * 所谓屈服于命运，是指厌倦了什么呢？争斗？傲慢？还是说害怕着什么呢？失去？死亡？
      * 毛虫破茧涅槃，是对命运的屈从还是反抗呢？
-     * 庶民的只需屈服强者即可，这就是他们的命运，是他们的使命，是他们唯一的价值
+     * 庶民的只需屈服即可，这就是他们的命运，是他们的使命，是他们唯一的价值
      *权贵如此说道
      * 不，我们要反抗，我们需要英雄
      * 英雄的使命便是革命，这是英雄的命运
