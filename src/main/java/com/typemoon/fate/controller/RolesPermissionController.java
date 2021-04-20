@@ -7,15 +7,15 @@ import org.springframework.web.bind.annotation.RestController;
 
 /**
  * <p>
- *  前端控制器
+ * 权能表 前端控制器
  * </p>
  *
  * @author fandz
- * @since 2021-03-30
+ * @since 2021-04-19
  */
 @RestController
-@RequestMapping("/userRole")
-public class UserRoleController {
+@RequestMapping("/rolesPermission")
+public class RolesPermissionController {
 
 }
 

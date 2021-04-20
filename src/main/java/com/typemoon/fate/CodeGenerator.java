@@ -22,7 +22,7 @@ public class CodeGenerator {
 // 数据源配置
         DataSourceConfig dataSourceConfig = new DataSourceConfig();
         dataSourceConfig.setDriverName("com.mysql.cj.jdbc.Driver");
-        dataSourceConfig.setUrl("jdbc:mysql://localhost:3306/mybatis?serverTimezone=GMT&characterEncoding=utf8");
+        dataSourceConfig.setUrl("jdbc:mysql://localhost:3306/shiro?serverTimezone=GMT&characterEncoding=utf8");
         dataSourceConfig.setUsername("root");
         dataSourceConfig.setPassword("123456");
         generator.setDataSource(dataSourceConfig);
@@ -36,7 +36,7 @@ public class CodeGenerator {
 
         StrategyConfig strategyConfig = new StrategyConfig();
         strategyConfig.setEntityLombokModel(true);
-        strategyConfig.setInclude("servant","mio","role","user_role");//表名,可一个可多个
+        strategyConfig.setInclude("roles_permission","user_info","user_roles","users","mio");//表名,可一个可多个
         strategyConfig.setNaming(NamingStrategy.underline_to_camel);
         strategyConfig.setColumnNaming(NamingStrategy.underline_to_camel);
         strategyConfig.setEntityLombokModel(true);

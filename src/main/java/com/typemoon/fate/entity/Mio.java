@@ -6,11 +6,11 @@ import lombok.EqualsAndHashCode;
 
 /**
  * <p>
- * 
+ * >v<
  * </p>
  *
  * @author fandz
- * @since 2021-03-30
+ * @since 2021-04-19
  */
 @Data
 @EqualsAndHashCode(callSuper = false)

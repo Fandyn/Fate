@@ -1,16 +1,16 @@
 package com.typemoon.fate.mapper;
 
-import com.typemoon.fate.entity.Mio;
+import com.typemoon.fate.entity.RolesPermission;
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 
 /**
  * <p>
- * >v< Mapper 接口
+ * 权能表 Mapper 接口
  * </p>
  *
  * @author fandz
  * @since 2021-04-19
  */
-public interface MioMapper extends BaseMapper<Mio> {
+public interface RolesPermissionMapper extends BaseMapper<RolesPermission> {
 
 }

@@ -78,10 +78,11 @@ public class ShiroConfig {
         filterMap.put("/index.html", "anon");
         filterMap.put("/login.html", "anon");
         filterMap.put("/regist.html", "anon");
+        filterMap.put("/login", "anon");
+        filterMap.put("/index", "anon");
         filterMap.put("/mio/login", "anon");
         filterMap.put("/**", "authc");
         filter.setFilterChainDefinitionMap(filterMap);
-
         return filter;
     }
 }

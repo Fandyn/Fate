@@ -11,7 +11,7 @@ server:
 spring:
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://localhost:3306/mybatis?serverTimezone=GMT
+    url: jdbc:mysql://localhost:3306/shiro?serverTimezone=GMT
     username: root
     password: 123456
     # 视图的前缀和后缀

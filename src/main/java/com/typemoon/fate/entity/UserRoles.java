@@ -1,42 +1,37 @@
 package com.typemoon.fate.entity;
 
+import com.baomidou.mybatisplus.annotation.IdType;
 import com.baomidou.mybatisplus.annotation.TableId;
-import com.baomidou.mybatisplus.annotation.TableField;
 import java.io.Serializable;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
 
 /**
  * <p>
- * 
+ * 角色权限表
  * </p>
  *
  * @author fandz
- * @since 2021-03-30
+ * @since 2021-04-19
  */
 @Data
 @EqualsAndHashCode(callSuper = false)
-public class Role implements Serializable {
+public class UserRoles implements Serializable {
 
     private static final long serialVersionUID = 1L;
 
-    /**
-     * 编号
-     */
-    @TableId("ID")
+    @TableId(value = "id", type = IdType.AUTO)
     private Integer id;
 
     /**
-     * 角色名称
+     * 角色
      */
-    @TableField("ROLE_NAME")
-    private String roleName;
+    private String username;
 
     /**
-     * 角色描述
+     * 权柄
      */
-    @TableField("ROLE_DESC")
-    private String roleDesc;
+    private String roleName;
 
 
 }
